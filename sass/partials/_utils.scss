@@ -1,0 +1,32 @@
+/* 
+        Reset Button by MoOx. See: https://gist.github.com/MoOx/9137295
+*/
+@mixin button_reset{
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    background: transparent;
+
+    color: inherit;
+    font: inherit;
+    line-height: inherit;
+
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    -webkit-appearance: none;
+
+    cursor: pointer;
+}
+
+@mixin focus-visible {
+    outline: none;
+    background-color: var(--highlight-33);
+}
+
+button.reset{
+    @include button_reset;
+}

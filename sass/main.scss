@@ -1,33 +1,41 @@
-@import "theme/flexoki.scss";
-@import "theme/dark.scss";
-@import "partial/header.scss";
-@import "partial/wrap.scss";
-@import "partial/fonts.scss";
-@import "partial/text.scss";
+@import "partials/_credits.scss";
+@import "partials/_utils.scss";
+@import "partials/color-scheme/_flexoki.scss";
+@import "partials/color-scheme/_dark.scss";
+@import "partials/color-scheme/_light.scss";
+@import "partials/_reset.scss";
+@import "partials/_header.scss";
+@import "partials/_wrap.scss";
+@import "partials/_fonts.scss";
+@import "partials/_text.scss";
 // @import "partial/layout.scss";
 
 :root{
     --wrap-max-wide: 1024px;
-    --wrap-wide: 50rem;
+    --wrap-wide: 40em;
     --text-font: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 
-body{
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;  
-    text-size-adjust: none;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    background-color: var(--bg);
-    color: var(--tx-normal);
-    font-family: var(--text-font);
-    font-size: calc(1.2rem + 0.25vw);
-    font-weight: 400;
+html{
+    font-size: 100%;
 }
 
-@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
-@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
-@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
-@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+body{
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;  
+    text-size-adjust: none;
+    text-rendering: optimizeLegibility;
+    background-color: var(--bg);
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        --wrap-wide: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        --wrap-wide: 95%;
+    }
+}

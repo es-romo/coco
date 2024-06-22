@@ -1,11 +1,25 @@
-:root{
-    line-height: 1.5;
+body{
+    color: var(--tx-normal);
+    font-family: var(--text-font);
+    font-size: calc(1rem + 0.3vw);
+    font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0.8em 0;
+}
+
+a:focus-visible{
+    @include focus_visible;
 }
 
 .section {
+    em, em a {
+        color: var(--tx-faint);
+    }
     /** Links **/
     ul li::marker {
-        color: var(--or-2);
+        color: var(--highlight);
     }
     a{
         color: var(--tx-normal);
@@ -25,17 +39,7 @@
 
 // External links
 a[href*='//'], a[href*='mailto:']{
-    color: red;
-    // padding-right: 0.75em;
-    // &:after{
-    //     content: '';
-    //     background-size:cover;
-    //     margin-top: 0.5em;
-    //     position:absolute;
-    //     width: 0.7em;
-    //     height: 0.7em;
-    //     background-image: url('icons/up-arrow.svg');
-    // }
+    display: inline-block;
     &:after{
         content: '';
         background-image: url('icons/arrow-up.svg');
@@ -43,7 +47,9 @@ a[href*='//'], a[href*='mailto:']{
         display: inline-block;
         height: 1em;
         width: 1em;
-        margin-left: -0.2em;
+        margin-left: -0.15em;
+        margin-right: -0.2em;
+        filter: var(--filter-muted);
     }
 }
 
