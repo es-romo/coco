@@ -12,5 +12,11 @@ build_search_index = true
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
 
+external_links_target_blank=true
+
 [extra]
 # Put all your custom variables here
+menu = [
+    {url = "/projects", name = "/projects"},
+    {url = "/now", name = "/now"},
+]

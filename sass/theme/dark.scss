@@ -1,0 +1,33 @@
+:root{
+    /* Scheme */
+    --bg-2: var(--base-950); /* Secondary background */
+    --ui: var(--base-900); /* Borders */
+    --ui-2: var(--base-850); /* Hovered borders */
+    --ui-3: var(--base-800); /* Active borders */
+    --tx-3: var(--base-700); /* Faint text */
+    --tx-a: var(--orange-400);
+    --re: var(--red-400); /* Error text */
+    --or: var(--orange-400); /* Warning text */
+    --ye: var(--yellow-400);
+    --gr: var(--green-400); /* Success text */
+    --cy: var(--cyan-400); /* Links, active states */
+    --bl: var(--blue-400);
+    --pu: var(--purple-400);
+    --ma: var(--magenta-400);
+    --re-2: var(--red-60);
+    --or-2: var(--orange-600);
+    --ye-2: var(--yellow-600);
+    --gr-2: var(--green-600);
+    --cy-2: var(--cyan-600);
+    --bl-2: var(--blue-600);
+    --pu-2: var(--purple-60);
+    --ma-2: var(--magenta-600);
+
+    --bg: var(--black); /* Main background */
+    --tx-normal: var(--base-200); /* Primary text */
+    --tx-muted: var(--base-800); /* Muted text */
+    --tx-faint: var(--base-700); /* Muted text */
+    --highlight: var(--orange-400);
+    --highlight-33: color-mix(in srgb, var(--highlight) 33%, transparent);
+    --highlight-50: color-mix(in srgb, var(--highlight) 33%, transparent);
+}

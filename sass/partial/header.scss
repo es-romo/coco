@@ -1,0 +1,39 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 0;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+.nav-link{
+    color: var(--tx-normal);
+    font-weight: 500;
+    text-decoration-style: wavy;
+    text-underline-offset: 0.3rem;
+    text-decoration-color: var(--highlight);
+    &:hover{
+        color: var(--highlight);
+    }
+    &:active{
+        text-shadow: 0 0 1em var(--highlight);
+    }
+}
+
+.title{
+    font-size: 1.2em;
+    color: var(--tx-normal);
+    font-weight: 500;
+    text-decoration: none;
+    &:hover{
+        color: var(--highlight);
+    }
+    &:active{
+        text-shadow: 0 0 1em var(--highlight);
+    }
+}

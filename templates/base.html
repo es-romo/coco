@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Esteban Romo</title>
+  <link rel="stylesheet" type="text/css" media="screen" href={{ get_url(path="main.css") }} />
+</head>
+
+<body>
+  <div class="wrap">
+    {% include "partial/header.html" %}
+    <section class="section">
+      {% block content %} {% endblock %}
+    </section>
+  </div>
+</body>
+
+</html>

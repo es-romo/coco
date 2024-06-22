@@ -1,0 +1,8 @@
+<header>
+    <a href="/" class="title">Esteban Romo</a>
+    <nav>
+        {% for menu in config.extra.menu %}
+        <a class="nav-link" href={{ menu.url }}>{{ menu.name }}</a>
+        {% endfor %}
+    </nav>
+</header>
