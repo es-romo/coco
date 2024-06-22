@@ -1,5 +1,6 @@
 +++
 template = "index.html"
+title = "Now"
 +++
 # Now
 
@@ -12,6 +13,6 @@ I'm also:
 - Starting to drum
 - Weightlifting
 - Rock climbing every once in a while
-- Fixing my mountain bike after accidentally leaving it uncovered over the winter...
+- Fixing my mountain bike after accidentally leaving it uncovered over the winter :(
 
 *Updated: 2024-06-20. See [https://nownownow.com/about](https://nownownow.com/about)*

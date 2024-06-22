@@ -10,7 +10,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 a:focus-visible{
-    @include focus_visible;
+    @include link-focus-visible;
 }
 
 .section {
@@ -55,4 +55,8 @@ a[href*='//'], a[href*='mailto:']{
 
 ::selection {
     background: var(--highlight-33);
+}
+
+.faint {
+    color: var(--tx-faint);
 }

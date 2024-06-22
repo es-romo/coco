@@ -3,7 +3,22 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Esteban Romo</title>
+
+  {% set current_path = current_path | default(value="/") %}
+  {% set main_title = config.title | default(value="Coco") %}
+  {% if current_path == "/" %}
+  <title>
+    {{ main_title}}
+  </title>
+  {% else %}
+    <title>
+        {{ main_title }}
+        {% if page.title %} | {{ page.title }}
+        {% elif section.title %} | {{ section.title }}
+        {% endif %}
+    </title>
+  {% endif %}
+
   <link rel="stylesheet" type="text/css" media="screen" href={{ get_url(path="main.css") }} />
   <script src="/js/scheme.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">

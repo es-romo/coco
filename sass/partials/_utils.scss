@@ -22,11 +22,15 @@
     cursor: pointer;
 }
 
-@mixin focus-visible {
-    outline: none;
-    background-color: var(--highlight-33);
+@mixin screen_small {
+    @media screen and (max-width: 600px) { @content; }
 }
 
-button.reset{
-    @include button_reset;
+@mixin screen_medium {
+    @media screen and (max-width: 992px) {@content; }
+}
+
+@mixin link-focus-visible {
+    outline: none;
+    background-color: var(--highlight-33);
 }

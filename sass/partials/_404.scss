@@ -1,0 +1,39 @@
+.not-found{
+    width: 100%;
+    text-align: center;
+
+    & h1, h2, h3{
+        line-height: 1.15;
+        margin: .5em 0;
+    }
+    & h1 {
+        margin: 0;
+        font-size: 10em;
+    }
+}
+
+@include screen_medium{
+    .not-found {
+        & h1, h2, h3{
+            line-height: 1.15;
+            margin: .3em 0;
+        }
+        & h1 {
+            margin: 0;
+            font-size: 8em;
+        }
+    }
+}
+
+@include screen_small{
+    .not-found {
+        & h1, h2, h3{
+            line-height: 1.15;
+            margin: .2em 0;
+        }
+        & h1 {
+            margin: 0;
+            font-size: 5em 0;
+        }
+    }
+}

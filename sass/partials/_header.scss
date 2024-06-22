@@ -1,23 +1,15 @@
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1rem 2rem;
+    gap: 1rem 1.3rem;
     margin: 4rem 0;
     nav{
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 1.3rem;
-    }
-}
-
-.actions button{
-    @include button_reset;
-    &:focus-visible{
-        @include focus_visible;
     }
 }
 
@@ -48,13 +40,28 @@ header {
     }
 }
 
-.actions .header-icon{
-    font-size: 1.5em;
-    &:hover, &:active{
-        // animation: shake 0.2s;
-        // animation-iteration-count: 1;
-        // transform: scale(1.05);
+.actions button{
+    @include button_reset;
+    &:focus-visible{
+        outline: none;
+    }
+}
+
+.actions .scheme-icon{
+    font-size: 2em;
+    &:hover, &:active, &:focus-visible{
         text-shadow: 0 0 0.5em var(--opposite-bg), 0 0 1em var(--opposite-bg), 0 0 1.2em var(--opposite-bg),;
     }
 }
-  
+
+@include screen_small{
+    .title{
+        font-size: 2em
+    }
+    .actions .scheme-icon {
+        font-size: 2.5em;
+    }
+    header nav{
+        display: none;
+    }
+}

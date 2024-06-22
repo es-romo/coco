@@ -6,9 +6,8 @@
 @import "partials/_reset.scss";
 @import "partials/_header.scss";
 @import "partials/_wrap.scss";
-@import "partials/_fonts.scss";
 @import "partials/_text.scss";
-// @import "partial/layout.scss";
+@import "partials/404";
 
 :root{
     --wrap-max-wide: 1024px;
@@ -28,14 +27,14 @@ body{
     background-color: var(--bg);
 }
 
-@media screen and (max-width: 992px) {
+@include screen_medium {
     body {
         --wrap-wide: 80%;
     }
 }
 
-@media screen and (max-width: 600px) {
+@include screen_small {
     body {
-        --wrap-wide: 95%;
+        --wrap-wide: 90%;
     }
 }

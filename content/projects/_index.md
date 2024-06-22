@@ -1,5 +1,6 @@
 +++
 template = "index.html"
+title = "Projects"
 +++
 
 # Projects
