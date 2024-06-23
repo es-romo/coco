@@ -11,3 +11,4 @@ menu = [
     {url = "/projects", name = "/projects"},
     {url = "/now", name = "/now"}
 ]
+favicon = "icons/default_favicon.ico"

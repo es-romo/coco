@@ -7,9 +7,9 @@
   {% set main_title = config.title | default(value="Coco") %}
   {% set current_url = current_url | default(value=config.base_url) %}
   {% if current_url == config.base_url %}
-  <title>
-    {{ main_title}}
-  </title>
+    <title>
+      {{ main_title}}
+    </title>
   {% else %}
     <title>
         {{ main_title }}
@@ -18,6 +18,9 @@
         {% endif %}
     </title>
   {% endif %}
+
+  {% set favicon_url = config.extra.favicon | default(value="/icons/default_favicon.ico") %}
+  <link rel="icon" type="image/x-icon" href={{ get_url(path=favicon_url) }}>
 
   <link rel="stylesheet" type="text/css" media="screen" href={{ get_url(path="main.css") }} />
   <script src={{ get_url(path="js/scheme.js") }}></script>
