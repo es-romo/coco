@@ -3,7 +3,7 @@ A minimal theme inspired using Steph Ango's [Flexoki](https://stephango.com/flex
 
 Check out the [demo](https://es-romo.github.io/coco/) or my personal [website](https://romo.sh) for a real example.
 
-![coco theme](screenshot.png)
+![coco theme](screenshot.jpg)
 
 ## Installation
 
