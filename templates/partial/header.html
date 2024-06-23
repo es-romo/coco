@@ -3,7 +3,7 @@
     <div style="flex-grow: 1;"></div>
     <nav>
         {% for menu in config.extra.menu %}
-        <a class="nav-link" href={{ menu.url }}>{{ menu.name }}</a>
+        <a class="nav-link" href={{ get_url(path=menu.url) }}>{{ menu.name }}</a>
         {% endfor %}
     </nav>
     <div class="actions">
