@@ -1,0 +1,40 @@
+@import "partials/_credits.scss";
+@import "partials/_utils.scss";
+@import "partials/color-scheme/_flexoki.scss";
+@import "partials/color-scheme/_dark.scss";
+@import "partials/color-scheme/_light.scss";
+@import "partials/_reset.scss";
+@import "partials/_header.scss";
+@import "partials/_wrap.scss";
+@import "partials/_text.scss";
+@import "partials/404";
+
+:root{
+    --wrap-max-wide: 1024px;
+    --wrap-wide: 40em;
+    --text-font: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+html{
+    font-size: 100%;
+}
+
+body{
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;  
+    text-size-adjust: none;
+    text-rendering: optimizeLegibility;
+    background-color: var(--bg);
+}
+
+@include screen_medium {
+    body {
+        --wrap-wide: 80%;
+    }
+}
+
+@include screen_small {
+    body {
+        --wrap-wide: 90%;
+    }
+}

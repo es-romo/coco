@@ -1,0 +1,16 @@
+name = "Coco"
+description = "A minimal, lightweight theme inspired by Steph Ango"
+license = "MIT"
+homepage = "https://github.com/es-romo/coco"
+min_version = "0.18.0"
+demo = "https://es-romo.github.io/coco"
+
+[extra]
+menu = [
+    {url = "/projects", name = "/projects"},
+    {url = "/now", name = "/now"},
+]
+
+[author]
+name = "Esteban Romo"
+homepage = "https://romo.sh"

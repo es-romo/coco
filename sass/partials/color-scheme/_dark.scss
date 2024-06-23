@@ -1,0 +1,18 @@
+.dark{
+    --bg: var(--black);
+    --tx-normal: var(--base-200);
+    --tx-muted: var(--base-500);
+    --tx-faint: var(--base-700);
+    --highlight: var(--cyan-400);
+    --highlight-33: color-mix(in srgb, var(--highlight) 33%, transparent);
+    --highlight-50: color-mix(in srgb, var(--highlight) 33%, transparent);
+    --filter-muted: invert(33%) sepia(6%) saturate(234%) hue-rotate(7deg) brightness(92%) contrast(86%);
+    --opposite-bg: var(--paper);
+
+    #color-scheme-icon-dark{
+        display: none;
+    }
+    #color-scheme-icon-light{
+        display: initial;
+    }
+}

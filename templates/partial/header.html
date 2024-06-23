@@ -1,0 +1,13 @@
+<header>
+    <a href={{ get_url(path="/") }} class="title">{{ config.title | default(value="Coco") }}</a>
+    <div style="flex-grow: 1;"></div>
+    <nav>
+        {% for menu in config.extra.menu %}
+        <a class="nav-link" href={{ get_url(path=menu.url) }}>{{ menu.name }}</a>
+        {% endfor %}
+    </nav>
+    <div class="actions">
+        <button id="color-scheme-icon-dark" class="scheme-icon" onclick="toggle_color_scheme()">🌚</button>
+        <button id="color-scheme-icon-light" class="scheme-icon" onclick="toggle_color_scheme()">🌞</button>
+    </div>
+</header>
