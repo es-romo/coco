@@ -37,19 +37,20 @@ a:focus-visible{
     }
 }
 
-// External links
-a[href*='//'], a[href*='mailto:']{
-    display: inline-block;
-    &:after{
-        content: '';
-        background-image: url('icons/arrow-up.svg');
-        background-size: 100% 100%;
+section {
+    a[target="_blank"]{
         display: inline-block;
-        height: 1em;
-        width: 1em;
-        margin-left: -0.15em;
-        margin-right: -0.2em;
-        filter: var(--filter-muted);
+        &:after{
+            content: '';
+            background-image: url('icons/arrow-up.svg');
+            background-size: 100% 100%;
+            display: inline-block;
+            height: 1em;
+            width: 1em;
+            margin-left: -0.15em;
+            margin-right: -0.2em;
+            filter: var(--filter-muted);
+        }
     }
 }
 
