@@ -1,11 +1,13 @@
 +++
 +++
 # About me
-I'm a Software Engineer. Previously at [CANImmunize](https://www.canimmunize.ca/), where I helped develop the engine that powers Nova Scotia's [successful](https://www.thestar.com/news/gta/an-ontario-company-built-canada-s-best-vaccine-booking-system-for-nova-scotia/article_8a069eeb-fc6d-5f17-b387-78ff4c5ad9c1.html) COVID-19 immunization campaign and [VaxRecordNS](https://www.nshealth.ca/clinics-programs-and-services/vaxrecordns) among other projects.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed [porta tellus](https://github.com/es-romo/coco). Donec vestibulum imperdiet ligula. Proin elementum mollis ex. Fusce semper, nisl eu dictum [aliquet](https://github.com/es-romo/coco), est est convallis quam, at vestibulum sapien eros in sem. Phasellus maximus lacus ac augue [viverra](https://github.com/es-romo/coco) venenatis. Lorem ipsum dolor sit amet, consectetur adipiscing [projects](/projects).
 
-Now looking for my next role. Check out my [resume](https://github.com/es-romo/resume/blob/main/EstebanRomo_Resume.pdf), what I'm up to [now](/now) and some of my [projects](/projects).
+Sed sollicitudin finibus massa vitae sollicitudin. Cras non felis sed ex rutrum ullamcorper. Nam a iaculis velit. Cras non elit id nisl sodales [now](/now).
+
+---
 
 # Links
-- GitHub: [@es-romo](https://github.com/es-romo)
-- LinkedIn: [@es-romo](https://linkedin.com/in/es-romo)
-- Email: [esteban@romo.sh](mailto:esteban@romo.sh)
+- Link 1: [@link1](https://github.com/es-romo/coco)
+- Link 2: [link.com](https://github.com/es-romo/coco)
+- Link 3: [Click here](https://github.com/es-romo/coco)

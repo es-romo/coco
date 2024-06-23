@@ -1,5 +1,5 @@
 <header>
-    <a href="/" class="title">Esteban Romo</a>
+    <a href="/" class="title">{{ config.title | default(value="Coco") }}</a>
     <div style="flex-grow: 1;"></div>
     <nav>
         {% for menu in config.extra.menu %}

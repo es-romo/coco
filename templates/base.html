@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
 
-  {% set current_path = current_path | default(value="/") %}
   {% set main_title = config.title | default(value="Coco") %}
-  {% if current_path == "/" %}
+  {% set current_url = current_url | default(value=config.base_url) %}
+  {% if current_url == config.base_url %}
   <title>
     {{ main_title}}
   </title>
