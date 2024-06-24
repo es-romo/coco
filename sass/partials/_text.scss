@@ -42,7 +42,7 @@ section {
         display: inline-block;
         &:after{
             content: '';
-            background-image: url('icons/arrow-up.svg');
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ctitle%3EArtboard-5%3C/title%3E%3Cg id='Up_Right-3' data-name='Up Right'%3E%3Cpath d='M17,8v4a1,1,0,0,1-2,0V10.414L8.707,16.707a1,1,0,1,1-1.414-1.414L13.586,9H12a1,1,0,0,1,0-2h4A1,1,0,0,1,17,8Z' fill='black'/%3E%3C/g%3E%3C/svg%3E");
             background-size: 100% 100%;
             display: inline-block;
             height: 1em;
