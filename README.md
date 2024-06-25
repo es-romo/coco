@@ -57,7 +57,7 @@ external_links_target_blank = true
 She was my rescue cat :)
 
 ## License
-[MIT](License)
+[MIT](LICENSE)
 
 ## Attributions
 - Flexoki theme by Step Ango; See [https://stephango.com/flexoki](https://stephango.com/flexoki)
